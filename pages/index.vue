@@ -44,9 +44,14 @@ export default {
   methods: {
     changeColor() {
       this.txtColor1 = '#0059bb'
-      setTimeout(()=> this.txtColor2 = '#1287d9', 30)
-      setTimeout(()=> this.txtColor3 = '#f0e53c', 60)
-      setTimeout(()=> this.txtColor4 = '#cf335f', 90)
+      this.txtColor2 = '#0059bb'
+      this.txtColor3 = '#0059bb'
+      this.txtColor4 = '#0059bb'
+      setTimeout(()=> {
+        this.txtColor2 = '#1287d9'
+        this.txtColor3 = '#f0e53c' 
+        this.txtColor4 = '#cf335f'
+      }, 500)
     }
   }
 }
@@ -72,7 +77,7 @@ export default {
 }
 
 .title span {
-  transition: color 0.2s ease;
+  transition: color 0.5s ease;
 }
 
 .subtitle {
